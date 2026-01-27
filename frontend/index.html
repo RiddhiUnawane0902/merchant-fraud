@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fraud Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Fraud Detection System</h2>
+
+    <label>Transaction Amount (₹)</label>
+    <input id="amount" type="number" placeholder="Enter amount e.g. 1500">
+
+    <label>Transaction Hour (0–23)</label>
+    <input id="hour" type="number" placeholder="Enter hour e.g. 2">
+
+    <label>Location Change</label>
+    <select id="location_change">
+        <option value="0">Same Location</option>
+        <option value="1">New Location</option>
+    </select>
+
+    <label>Device Used</label>
+    <select id="device_shared">
+        <option value="0">Personal Device</option>
+        <option value="1">Shared Device</option>
+    </select>
+
+    <button onclick="predict()">Predict</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
